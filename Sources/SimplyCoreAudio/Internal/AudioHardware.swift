@@ -25,10 +25,7 @@ final class AudioHardware {
     }
 
     func disableDeviceMonitoring() {
-        for device in allKnownDevices {
-            remove(device: device)
-        }
-
+        allKnownDevices = []
         unregisterForNotifications()
     }
 
